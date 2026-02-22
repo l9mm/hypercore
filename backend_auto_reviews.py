@@ -1,8 +1,3 @@
-"""
-Flask Backend Server with Automatic Review Generation
-Generates reviews every 2-9 hours using Gemini AI + Firebase
-"""
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import google.generativeai as genai
