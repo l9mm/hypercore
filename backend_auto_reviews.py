@@ -20,7 +20,7 @@ from products_database import PRODUCTS
 from names_database import CUSTOMER_NAMES
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # ============================================
 # CONFIGURATION
